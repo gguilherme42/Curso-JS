@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body {
+            font: normal 20pt arial;
+        }
+        input {
+            width: 100px;
+        }
+        div#res {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SOMA</h1>
+    <input type="number" name="txtn1" id="txtn1"> + 
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="SOMAR" onclick="clicar()">
+    <div id="res"></div>
+    <script>
+        function clicar(){
+            // tn1 e tn2 são caixas de texto
+            var tn1 = document.querySelector('input#txtn1')
+            var tn2 = document.querySelector('input#txtn2')
+            // O valor de tn1 e tn2 são números
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            s = n1 + n2
+            document.querySelector('div#res').innerHTML = `A soma entre ${n1} e ${n2} é: ${s}`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 005: Primeiros Passos com DOM</title>
+    <style>
+        body {
+            background-color: tomato;
+            font: normal 10pt Arial;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos com DOM</h1> 
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JS</p>
+    <div id='msg'>Clique em mim</div>
+    <script>
+         //Pega o segundo elemento <p>
+        var p1 = document.getElementsByTagName('p')[1]
+        // Pega o primeiro elemento <p>
+        var p2 = document.getElementsByTagName('p')[0]
+        //innetText faz com que apareça o que está dentro do elemento p.
+        // innertHTML escreve o elemento p1 com as tags filhas.
+        document.write(p1.innerHTML)
+        //Muda a cor de p2 para preto.
+        p2.style.color = 'black'
+        // Pegando o a div com id 'msg'
+        var d = document.getElementById('msg')
+        d.style.background = 'red'
+        document.body.style.background = 'Grey'
+    </script>
+</body>
+</html>

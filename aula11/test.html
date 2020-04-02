@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAR OU IMPAR</title>
+    <style>
+        input#txtn1 {
+            width: 50px;
+        }
+        div#res {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>PAR OU IMPAR</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="button" value="P ou I" onclick="clicar()">
+    <div id="res">Resultado:</div>
+    <script>
+        function clicar(){
+            var tn1 = document.querySelector('input#txtn1')
+            var a = Number(tn1.value)
+            if (a % 2 == 0 ){
+                document.querySelector('div#res').innerHTML = "Resultado: <strong>PAR</strong>"
+            } else {
+                document.querySelector('div#res').innerHTML = "Resultado: <strong>IMPAR</strong>"
+            }
+        }
+    </script>
+</body>
+</html>
