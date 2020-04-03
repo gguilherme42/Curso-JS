@@ -17,9 +17,7 @@ section {
     margin: auto;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.418);
 }
-input {
-    width: 150px;
-}
+
 footer {
     color: white;
     font: normal 8pt Arial;
